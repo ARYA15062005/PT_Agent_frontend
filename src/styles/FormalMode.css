@@ -1,0 +1,19 @@
+.formal {
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formal .sidebar {
+    box-shadow: 0 0 5px #888;
+  }
+  
+  .formal .chat-container {
+    box-shadow: 0 0 5px #888;
+  }
+  
+  .formal .export-btn {
+    background-color: #333;
+    color: #fff;
+  }
+  

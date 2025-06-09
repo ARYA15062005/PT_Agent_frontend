@@ -1,0 +1,20 @@
+.scifi {
+    background-color: #000;
+    color: #00ff00;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .scifi .sidebar {
+    box-shadow: 0 0 15px #00ff00;
+  }
+  
+  .scifi .chat-container {
+    box-shadow: 0 0 10px #00ff00;
+  }
+  
+  .scifi .export-btn {
+    background-color: #00ff00;
+    color: #000;
+    box-shadow: 0 0 8px #00ff00;
+  }
+  

@@ -1,0 +1,20 @@
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    animation: blink 1s infinite ease-in-out;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+  

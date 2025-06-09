@@ -1,0 +1,169 @@
+.conversation-box {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--text-color);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-bottom: 12px;
+  scroll-behavior: smooth;
+  user-select: text;
+}
+
+.message {
+  max-width: 100%;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Markdown Styling */
+.markdown-message {
+  background-color: #1e1e1e;
+  color: #e8e8e8;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.markdown-message strong {
+  font-weight: bold;
+}
+
+.markdown-message em {
+  font-style: italic;
+}
+
+.markdown-message ul {
+  padding-left: 20px;
+  margin-top: 0.5em;
+}
+
+.markdown-message li {
+  margin-bottom: 0.25em;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input[type="text"] {
+  flex-grow: 1;
+  padding: 14px 18px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1.5px solid #ccc;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.input-area input[type="text"]:focus {
+  border-color: var(--primary-blue);
+}
+
+.input-area button {
+  padding: 14px 24px;
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+}
+
+.input-area button:hover {
+  background-color: var(--button-bg-hover);
+}
+
+.upload-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--primary-blue);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-btn:hover {
+  background-color: var(--button-bg-hover);
+}
+
+.mic-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 0.4rem;
+  padding: 12px;
+  border-radius: 12px;
+  color: var(--text-color);
+  transition: background-color 0.25s ease;
+}
+
+.mic-btn:hover {
+  background-color: var(--button-bg-hover);
+  color: #007bff;
+}
+
+/* Enhanced Loading Animation: bigger, blue, AND rotating */
+.loading-dots {
+  display: inline-block;
+  font-size: 32px;                     /* larger dots */
+  color: var(--primary-blue);          /* blue dots */
+  animation: spin 4s linear infinite;  /* rotate group slowly */
+  line-height: 1;                      /* tighten vertical spacing */
+}
+
+.loading-dots span {
+  display: inline-block;               /* required for blink to work on each dot */
+  animation: blink 1.8s infinite both;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+/* existing blink keyframes */
+@keyframes blink {
+  0%, 20%, 50%, 80%, 100% { opacity: 1; }
+  40%, 60%            { opacity: 0; }
+}
+
+/* new spin keyframes for the dot group */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

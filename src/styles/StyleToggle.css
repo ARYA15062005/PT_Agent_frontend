@@ -1,0 +1,17 @@
+.style-toggle-btn {
+    margin-top: 20px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    user-select: none;
+  }
+  
+  .style-toggle-btn:hover {
+    background-color: var(--button-bg-hover);
+  }
+  

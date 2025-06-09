@@ -1,0 +1,23 @@
+.file-upload {
+    margin: 10px 0;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .file-upload input[type="file"] {
+    margin-right: 8px;
+  }
+  
+  .uploaded-image {
+    max-width: 200px;
+    max-height: 150px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .uploaded-file {
+    color: var(--primary-color);
+    text-decoration: underline;
+    margin: 5px 0;
+  }
+  

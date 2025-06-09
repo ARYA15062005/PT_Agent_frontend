@@ -1,0 +1,30 @@
+.theme-toggle {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .theme-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1.5px solid var(--primary-blue);
+    background-color: transparent;
+    color: var(--primary-blue);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  
+  .theme-btn:hover {
+    background-color: var(--primary-blue);
+    color: white;
+  }
+  
+  .theme-btn.active {
+    background-color: var(--primary-blue);
+    color: white;
+    cursor: default;
+  }
+  
