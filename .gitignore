@@ -23,8 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 
-
-
+GEMINI_API_KEY=
+GROQ_API_KEY=
 
 MONGO_URI=mongodb://localhost:27017/chatbot_db
 MONGO_DB_NAME=faq_chatbot
