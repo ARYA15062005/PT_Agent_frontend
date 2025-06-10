@@ -21,3 +21,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+GEMINI_API_KEY=AIzaSyDeCkmK8VBL0GR48HHrDGsR-_eN7P6casg
+GROQ_API_KEY=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
+
+MONGO_URI=mongodb://localhost:27017/chatbot_db
+MONGO_DB_NAME=faq_chatbot
+MONGO_COLLECTION_NAME=conversations
+
+SECRET_KEY=3d3a9e3c456e3b7f3f1f7c3f6a9a8f1b7d8a0a5c1e3f4f1c8a7b3f3f4c3a2e3a
