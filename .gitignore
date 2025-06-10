@@ -24,8 +24,7 @@ yarn-error.log*
 
 
 
-GEMINI_API_KEY=AIzaSyDeCkmK8VBL0GR48HHrDGsR-_eN7P6casg
-GROQ_API_KEY=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
+
 
 MONGO_URI=mongodb://localhost:27017/chatbot_db
 MONGO_DB_NAME=faq_chatbot
